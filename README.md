@@ -27,3 +27,41 @@
 ----------------------------------------------------
 
 
+### Project: 
+  * Automate configuring EC2 Server Instances
+### Technologiesused:
+  * Python, Boto3, AWS
+
+### Project Description:
+* Write a Python script that automates adding environment tags to all EC2 Server instances
+
+
+  ** Create 2 ec2 instance in paris region and 1 ec2 instance in frankfurt region
+1. Boto3 Setup:
+* Creates EC2 clients and resources for the Paris (```eu-west-3```) and Frankfurt (```eu-central-1```) regions.
+
+2. Retrieve Instance IDs for Paris Region:
+* Calls ```describe_instances()``` on the EC2 client for Paris to get instance data.
+* Iterates over the reservations and instances to collect instance IDs in the ```instance_ids_paris``` list.
+
+3. Apply "prod" Tag in Paris:
+* Used ```create_tags()``` to apply a tag with the key ```'environment'``` and the value ```'prod'``` to all instances in the Paris region.
+
+4.Retrieve Instance IDs for Frankfurt Region:
+* Similarly, calls ```describe_instances()``` for the Frankfurt region to retrieve instance IDs in the ```instance_ids_frankfurt``` list.
+5. Apply "dev" Tag in Frankfurt:
+* Used ```create_tags()``` to apply a tag with the key ```'environment'``` and the value ```'dev'``` to all instances in the Frankfurt region.
+
+ * it helps categorize EC2 instances by environment ("prod" for Paris and "dev" for Frankfurt) for organization.
+
+### Frankfurt Region:
+
+![describe_instance_status - Boto3 1 28 51 documentation - Google Chrome 21-09-2023 10_20_20](https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/c6452197-b805-4440-8b85-df3b0a09ef8a) 
+
+
+### Paris Region: 
+![describe_instance_status - Boto3 1 28 51 documentation - Google Chrome 21-09-2023 10_20_36](https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/1d4bf127-f3d0-41e7-87c0-798513f58ea1)
+
+-------------------------------------
+
+
