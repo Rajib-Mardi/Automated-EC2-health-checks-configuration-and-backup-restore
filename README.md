@@ -23,3 +23,7 @@
 * it helps in monitoring EC2 instance health and status in real-time.
   
 ![Automation-with-Python – healthCheckEc2 py 21-09-2023 09_34_47](https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/72bf8c90-7496-4621-9649-5cfcbfb0c07c)
+
+----------------------------------------------------
+
+
