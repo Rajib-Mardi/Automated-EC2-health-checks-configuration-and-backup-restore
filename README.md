@@ -64,4 +64,38 @@
 
 -------------------------------------
 
+###  Project: 
+  * Data Backup & Restore
+### Technologiesused: 
+Project Description:
+  * Python, Boto3, AWS
 
+### Project Description:
+  ### Write a Python script that automates creating backups for EC2 Volumes
+
+
+ *  Create a ec2 instance in aws manually  and tag the name of volume as the "prod" and use pyhon script to create a snapshot out of it
+
+* It creates snapshots of volumes that are tagged with the name "prod." It employs the "schedule" library to schedule and run the volume snapshot creation process at regular intervals.
+
+1.EC2 Client Initialization:
+* ```boto3.client('ec2')```: Initializes a connection to the AWS EC2 service using the ```boto3``` library.
+* ```region_name="eu-west-3"```: Specifies the AWS region (Paris) for the EC2 service
+2.  Create Snapshot Function:
+* ```describe_volumes()```: Retrieves details about EC2 volumes.
+* Filters: Filters the volumes by the ```Name``` tag, only retrieving volumes tagged with ```prod```.
+* For each volume in the response (```volumes['Volumes']```), the script creates a snapshot using ```create_snapshot()``` with the volume ID.
+* ```print(new_snapshot)```: Prints the snapshot details after creation.
+
+3. Scheduling with ```schedule```:
+* The schedule library is used to run the ```create_volume_snapshot()``` function every 30 seconds.
+
+4. Infinite Loop:
+* The ```while True``` loop keeps the script running continuously, checking every second if there is any pending task to run (i.e., the scheduled snapshot creation).
+
+
+![Automation-with-Python – volume-backups py 02-10-2023 23_13_51](https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/ad742853-f0d6-490b-b72b-cd2b3ed5f9bc)
+
+-----
+
+#### Write a Python script that cleans up old EC2 Volume snapshots
