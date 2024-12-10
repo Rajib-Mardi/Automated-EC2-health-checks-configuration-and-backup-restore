@@ -96,7 +96,7 @@ Project Description:
 
 ![Automation-with-Python – volume-backups py 02-10-2023 23_13_51](https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/ad742853-f0d6-490b-b72b-cd2b3ed5f9bc)
 
------
+-------
 
 #### Write a Python script that cleans up old EC2 Volume snapshots
 
@@ -122,3 +122,36 @@ Project Description:
 * The ```delete_snapshot()``` method deletes each older snapshot, and the response is printed.
 
 ![Automation-with-Python – cleanup-snapshots py 02-10-2023 23_20_55](https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/20f2b228-b769-4259-b7f9-aeaa4835107d)
+
+---------
+
+### Write a Python script that restores EC2 Volumes
+
+1. EC2 Client and Resource Initialization:
+* ```ec2_client```: Used for making low-level EC2 API calls (like describing volumes and snapshots).
+* ```ec2_resource```: Provides higher-level abstractions for managing EC2 resources (like volumes and instances).
+
+2. Fetching Volumes Attached to an Instance:
+* Retrieves volumes attached to the specified EC2 instance (```instance_id```).
+
+3. Fetching Snapshots for the Volume:
+* Fetches all snapshots of the volume attached to the instance by filtering with the volume ID.
+
+
+4. Sorting Snapshots by Date:
+*  Sorts the snapshots by their ```StartTime``` in descending order, keeping the most recent snapshot.
+
+5. Creating a New Volume from the Latest Snapshot:
+* Creates a new EBS volume in ```eu-west-3c``` using the latest snapshot, and tags it with ```Name=prod```.
+
+ 6. Waiting for the Volume to Become Available:
+* The script continuously checks the state of the newly created volume until it is in the ```available``` state.
+* Once available, it attaches the new volume to the instance at device ```/dev/xvdab```.
+
+* This script finds the latest snapshot of a volume attached to a specified EC2 instance, creates a new volume from that snapshot, and then attaches the new volume back to the same instance.
+
+
+![Automation-with-Python – restore-volume py 02-10-2023 23_45_03](https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/365d8053-f15e-4fa3-b7d3-e240da38743a)
+
+
+![Volumes _ EC2 _ eu-west-3 - Google Chrome 02-10-2023 23_52_22](https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/2c6bf65b-3358-4dd7-9143-dbd6ab2ff6ea)
