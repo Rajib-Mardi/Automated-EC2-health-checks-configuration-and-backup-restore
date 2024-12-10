@@ -98,7 +98,7 @@ Project Description:
 
 -------
 
-#### Write a Python script that cleans up old EC2 Volume snapshots
+### Write a Python script that cleans up old EC2 Volume snapshots
 
 * if snapshots run everyday , we end up with lots of snapshots
 * this script fetches volumes tagged with ```Name=prod```, then retrieves and sorts their snapshots by date.
@@ -127,6 +127,8 @@ Project Description:
 
 ### Write a Python script that restores EC2 Volumes
 
+* This script finds the latest snapshot of a volume attached to a specified EC2 instance, creates a new volume from that snapshot, and then attaches the new volume back to the same instance.
+
 1. EC2 Client and Resource Initialization:
 * ```ec2_client```: Used for making low-level EC2 API calls (like describing volumes and snapshots).
 * ```ec2_resource```: Provides higher-level abstractions for managing EC2 resources (like volumes and instances).
@@ -148,7 +150,7 @@ Project Description:
 * The script continuously checks the state of the newly created volume until it is in the ```available``` state.
 * Once available, it attaches the new volume to the instance at device ```/dev/xvdab```.
 
-* This script finds the latest snapshot of a volume attached to a specified EC2 instance, creates a new volume from that snapshot, and then attaches the new volume back to the same instance.
+
 
 
 ![Automation-with-Python – restore-volume py 02-10-2023 23_45_03](https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/365d8053-f15e-4fa3-b7d3-e240da38743a)
