@@ -99,3 +99,5 @@ Project Description:
 -----
 
 #### Write a Python script that cleans up old EC2 Volume snapshots
+
+* if snapshots run everyday , we end up with lots of snapshots
