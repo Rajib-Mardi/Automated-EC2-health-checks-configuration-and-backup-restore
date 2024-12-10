@@ -22,7 +22,10 @@
 
 * it helps in monitoring EC2 instance health and status in real-time.
   
-![Automation-with-Python – healthCheckEc2 py 21-09-2023 09_34_47](https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/72bf8c90-7496-4621-9649-5cfcbfb0c07c)
+
+
+<img src="https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/72bf8c90-7496-4621-9649-5cfcbfb0c07c" width="700">
+
 
 ----------------------------------------------------
 
@@ -56,11 +59,15 @@
 
 ### Frankfurt Region:
 
-![describe_instance_status - Boto3 1 28 51 documentation - Google Chrome 21-09-2023 10_20_20](https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/c6452197-b805-4440-8b85-df3b0a09ef8a) 
+
+
+<img src="https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/c6452197-b805-4440-8b85-df3b0a09ef8a" width="700">
 
 
 ### Paris Region: 
-![describe_instance_status - Boto3 1 28 51 documentation - Google Chrome 21-09-2023 10_20_36](https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/1d4bf127-f3d0-41e7-87c0-798513f58ea1)
+
+<img src="https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/1d4bf127-f3d0-41e7-87c0-798513f58ea1" width="700">
+
 
 -------------------------------------
 
@@ -94,7 +101,10 @@ Project Description:
 * The ```while True``` loop keeps the script running continuously, checking every second if there is any pending task to run (i.e., the scheduled snapshot creation).
 
 
-![Automation-with-Python – volume-backups py 02-10-2023 23_13_51](https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/ad742853-f0d6-490b-b72b-cd2b3ed5f9bc)
+
+
+<img src="https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/ad742853-f0d6-490b-b72b-cd2b3ed5f9bc" width="700">
+
 
 -------
 
@@ -121,7 +131,10 @@ Project Description:
 * It deletes all snapshots except for the two most recent ones (using ```sorted_by_date[2:]``` to skip the first two).
 * The ```delete_snapshot()``` method deletes each older snapshot, and the response is printed.
 
-![Automation-with-Python – cleanup-snapshots py 02-10-2023 23_20_55](https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/20f2b228-b769-4259-b7f9-aeaa4835107d)
+
+
+<img src="https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/20f2b228-b769-4259-b7f9-aeaa4835107d" width="700">
+
 
 ---------
 
@@ -153,7 +166,11 @@ Project Description:
 
 
 
-![Automation-with-Python – restore-volume py 02-10-2023 23_45_03](https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/365d8053-f15e-4fa3-b7d3-e240da38743a)
+
+<img src="https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/365d8053-f15e-4fa3-b7d3-e240da38743a" width="700">
 
 
-![Volumes _ EC2 _ eu-west-3 - Google Chrome 02-10-2023 23_52_22](https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/2c6bf65b-3358-4dd7-9143-dbd6ab2ff6ea)
+
+
+<img src="https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/2c6bf65b-3358-4dd7-9143-dbd6ab2ff6ea" width="700">
+
