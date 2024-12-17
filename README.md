@@ -1,3 +1,4 @@
+### Written automation scripts for EC2 Health Checks, configuring EC2 instances, Data Backup and Restore
 ### Project:
 * Health Check: EC2 Status Checks
 ### Technologiesused:
