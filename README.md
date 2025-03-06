@@ -25,7 +25,6 @@
   
 
 
-<img src="https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/72bf8c90-7496-4621-9649-5cfcbfb0c07c" width="700"> 
 
 
 
@@ -67,7 +66,6 @@
 
 
 
-<img src="https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/c6452197-b805-4440-8b85-df3b0a09ef8a" width="700">
 
 
 
@@ -78,7 +76,6 @@
 
 ### Paris Region: 
 
-<img src="https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/1d4bf127-f3d0-41e7-87c0-798513f58ea1" width="700">
 
 
 
@@ -122,7 +119,6 @@ Project Description:
 
 
 
-<img src="https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/ad742853-f0d6-490b-b72b-cd2b3ed5f9bc" width="700">
 
 
 
@@ -157,7 +153,6 @@ Project Description:
 
 
 
-<img src="https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/20f2b228-b769-4259-b7f9-aeaa4835107d" width="700">
 
 
 
@@ -196,7 +191,6 @@ Project Description:
 
 
 
-<img src="https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/365d8053-f15e-4fa3-b7d3-e240da38743a" width="700">
 
 
 
@@ -205,7 +199,6 @@ Project Description:
 
 
 
-<img src="https://github.com/Rajib-Mardi/Automation-with-Python1/assets/96679708/2c6bf65b-3358-4dd7-9143-dbd6ab2ff6ea" width="700">
 
 
 
